@@ -19,11 +19,11 @@ class MyApp extends StatelessWidget {
             bodyLarge: TextStyle(color: Colors.white, fontSize: 24),
             bodyMedium: TextStyle(color: Colors.white, fontSize: 24)),
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple)
-            .copyWith(background: Colors.black),fontFamily: GoogleFonts.ptSans().fontFamily,
-            
+            .copyWith(background: Color.fromARGB(255, 14, 13, 13)),
+        fontFamily: GoogleFonts.ptSans().fontFamily,
         useMaterial3: true,
-        
-      ),home: SplashScreen(),
+      ),
+      home: SplashScreen(),
     );
   }
 }
