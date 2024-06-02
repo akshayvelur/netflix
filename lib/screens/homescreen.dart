@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:netflix/common/utils.dart';
 import 'package:netflix/models/movie.dart';
+import 'package:netflix/screens/search_screen.dart';
 import 'package:netflix/services/api.dart';
 
 import 'package:netflix/services/api_services.dart';
@@ -54,7 +55,13 @@ class _HomescreenState extends State<Homescreen> {
               ),
             ),
             InkWell(
-              onTap: () {},
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => SearchScreen(),
+                    ));
+              },
               child: Icon(
                 Icons.search,
                 size: 30,
